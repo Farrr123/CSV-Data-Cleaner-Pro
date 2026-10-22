@@ -38,16 +38,19 @@ This repository is structured into three main evolution stages of the project:
 ```bash
 cd pro
 python3 csv_data_cleaner_pro.py
+```
 
 ### 2. Run the Data Generator
 ```bash
 cd generator
 python3 generate_data.py
+```
 
 ### 3. Run the Standard Version
 ```bash
 cd standard
 python3 "Real Data Cleaning.py"
+```
 
 ## Author
 Developed with passion on Pop!_OS Linux. Contributions, issues, and feature requests are welcome!
