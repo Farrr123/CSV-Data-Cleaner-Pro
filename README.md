@@ -1,10 +1,10 @@
-# 🧹 CSV Data Cleaner Pro
+# CSV Data Cleaner Pro
 
 An advanced, user-friendly Python desktop application and data processing toolkit designed to clean messy CSV datasets, handle missing values, remove duplicates, normalize text, validate emails and salaries, and generate detailed audit reports.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 This repository is structured into three main evolution stages of the project:
 
@@ -14,7 +14,7 @@ This repository is structured into three main evolution stages of the project:
 
 ---
 
-## 🚀 Features (Pro GUI Version)
+## Features (Pro GUI Version)
 
 - **Modern Dark UI**: Sleek desktop interface built using Tkinter with custom professional styling.
 - **Smart Column Detection**: Automatically identifies name, email, phone, salary, department, and city columns regardless of casing or header variations.
@@ -28,7 +28,7 @@ This repository is structured into three main evolution stages of the project:
 
 ---
 
-## 🛠️ How to Run
+## How to Run
 
 ### Requirements
 - Python 3.8 or higher.
