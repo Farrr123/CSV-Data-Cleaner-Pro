@@ -7,3 +7,6 @@ __pycache__/
 # Generated application files
 CSV_Cleaner_APP/cleaning_report.txt
 CSV_Cleaner_APP/employees_clean.csv
+# Generated application output files
+CSV_Cleaner_APP/*_cleaned_*.csv
+CSV_Cleaner_APP/*_report_*.txt

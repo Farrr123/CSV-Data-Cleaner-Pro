@@ -35,6 +35,10 @@ CSV-Data-Cleaner-Pro/
 - Create audit reports.
 - Desktop GUI built with Python Tkinter.
 
+## Preview
+
+![CSV Data Cleaner Pro](assets/demo.png)
+
 ## Requirements
 
 - Python 3.8 or higher.
