@@ -1,4 +1,5 @@
 import csv
+import math
 import os
 import platform
 import subprocess
@@ -385,15 +386,16 @@ class CSVDataCleanerApp:
                     missing_phones += 1
                     issues.append(f"Missing phone at row {index}: {row.get(name_col, 'Unknown') if name_col else 'Unknown'}")
 
-                if salary_col and row.get(salary_col) and self.validate_salary:
-                    salary = row[salary_col].replace(",", "").replace("$", "").strip()
+                if salary_col and self.validate_salary:
+                    original_salary = row.get(salary_col, "")
+                    salary = str(original_salary or "").replace(",", "").replace("$", "").strip()
                     try:
                         amount = float(salary)
-                        if amount < 0:
+                        if amount < 0 or not math.isfinite(amount):
                             raise ValueError
                     except ValueError:
                         invalid_salaries += 1
-                        issues.append(f"Invalid salary at row {index}: {row[salary_col]}")
+                        issues.append(f"Invalid salary at row {index}: {original_salary}")
 
                 if row != before:
                     rows_changed += 1

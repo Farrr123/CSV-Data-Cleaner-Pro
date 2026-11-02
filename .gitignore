@@ -3,3 +3,7 @@ __pycache__/
 .vscode/
 .idea/
 .DS_Store
+
+# Generated application files
+CSV_Cleaner_APP/cleaning_report.txt
+CSV_Cleaner_APP/employees_clean.csv
